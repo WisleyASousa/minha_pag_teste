@@ -1,8 +1,11 @@
 body{
     background-color: #1a1919;
 }
+.nome{
+    align-items: flex-start;
+}
 
-#perfil{
+.perfil{
     width: 8%;
     border: 1px solid rgb(255, 255, 255);;
     border-radius: 100px;
@@ -42,13 +45,16 @@ div{
     
 }
 
-aside{
+.aside{
+    align-items: flex-end;
+    border-width: 10%;
     border: 1px solid rgb(255, 255, 255);;
-    text-align: center;
-    padding: 15px;
     margin-bottom: 10px;
     background-color: transparent;
     color: rgb(255, 255, 255);
+    Border-radius: 15px;
+
+    
     
 }
 
@@ -68,8 +74,9 @@ li {
     
   }
 .icone{
-    width: 3%;
+    width: 2%;
     border-radius: 100px;
     padding: 2px;
+    
     
 }
