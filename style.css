@@ -7,25 +7,9 @@ body{
     
     background: linear-gradient(-110deg, #051c4a 25%, rgba(0, 0, 0, 0) 40%), url('IMG_4050.JPG');
     background-size: cover;
+    background-attachment: fixed;
  
 }
-.nome{
-    font-size: 1.5em;
-    font-family: zapfino;
-    animation: go-back 2s;
-}
-
-@keyframes go-back {
-  from {
-    transform: translateX(500px);
-  }
-  to {
-    transform: translateX(200);
-  }
-} 
-
-
-
 
 
 
@@ -160,7 +144,7 @@ li {
 }
 .flipper{
     position: relative;
-	transition: transform 0.8s;
+	transition: transform 1s;
 	transform-style: preserve-3d;
     
 }
@@ -174,3 +158,12 @@ li {
 .back{
 	transform: rotateY(180deg);
 }
+
+
+
+
+
+
+
+
+svg{font-weight:bold;max-width:500px;height:auto;}
