@@ -1,9 +1,18 @@
 body{
-    background-color: #1a1919;
+    background-color: #EEE8AA;
+    font-family: -apple-system, BlinkMacSystemFont, 'Open Sans', sans-serif;
+    padding: 0.5em 1em;
+
+    color: #fff;
+    
+    background: linear-gradient(-110deg, #051c4a 25%, rgba(0, 0, 0, 0) 40%), url('IMG_4050.JPG');
+    background-size: cover;
+ 
 }
 .nome{
-    align-items: flex-start;
+    font-size: 1.5em;
 }
+
 
 .perfil{
     width: 8%;
@@ -11,9 +20,29 @@ body{
     border-radius: 100px;
     padding: 2px;
 }
+.eu{
+    width: 60%;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    padding-bottom: 5px;
+    padding-right: 5px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.corpo{
+    display: flex;
+    flex-direction: row;
+    
+}
+.foto_corpo{
+    
+}
+
 .menu{
     display: flex;
     flex-direction: row;
+    font-size: 1.2em;
 }
 .menu2{
     padding-right: 1rem;
@@ -30,9 +59,13 @@ body{
     border-radius: 15px;
     color: rgb(255, 255, 255);
     padding-left: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    margin-right: 5px;
+
+    
 }
 
-div{
+.textoI{
     text-align: justify;
     border-radius: 15px;
     border: 1px solid rgb(255, 255, 255);;
@@ -42,41 +75,42 @@ div{
     height: auto;
     background-color: transparent;
     color: rgb(255, 255, 255);
-    
-}
-
-.aside{
-    align-items: flex-end;
-    border-width: 10%;
-    border: 1px solid rgb(255, 255, 255);;
-    margin-bottom: 10px;
-    background-color: transparent;
-    color: rgb(255, 255, 255);
-    Border-radius: 15px;
-
-    
-    
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
 }
 
 
-footer {
+
+.footer {
+
     border: 1px solid rgb(255, 255, 255);;
     clear: both;
-    height: 50px;
-    text-align: center;
+    align-items: center;
+    
     background-color: transparent;
     border-radius: 15px;
     color: rgb(255, 255, 255);
-     
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    margin-right: 5px;
+
+}
+.foo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5px;
+    
 }
 li {
     list-style-type: none;
-    
-  }
+
+}
+
 .icone{
-    width: 2%;
+
+    width: 25px;
     border-radius: 100px;
-    padding: 2px;
+    
+    margin-left: 5px;
     
     
 }
