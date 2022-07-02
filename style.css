@@ -11,7 +11,22 @@ body{
 }
 .nome{
     font-size: 1.5em;
+    font-family: zapfino;
+    animation: go-back 2s;
 }
+
+@keyframes go-back {
+  from {
+    transform: translateX(500px);
+  }
+  to {
+    transform: translateX(200);
+  }
+} 
+
+
+
+
 
 
 .perfil{
@@ -35,34 +50,49 @@ body{
     flex-direction: row;
     
 }
+
+
 .foto_corpo{
-    
+    cursor: pointer;
+  }
+.foto_corpo:hover {
+    animation: spin 2s linear infinite;
+}
+@keyframes spin {
+0% {
+    transform: rotateY(0deg);
+}
+100% {
+    transform: rotateY(180deg);
+}
 }
 
-.menu{
-    display: flex;
-    flex-direction: row;
-    font-size: 1.2em;
-}
+
+
+
+
+
 .menu2{
     padding-right: 1rem;
 }
-
+.menu_1{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    font-size: 1.2em;
+    padding: 1rem;
+}
 .flex-container{
     display:flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
     border: 1px solid rgb(255, 255, 255);;
-    padding: 10px;
-    margin-bottom: 10px;
     background-color: transparent;
     border-radius: 15px;
     color: rgb(255, 255, 255);
-    padding-left: 20px;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     margin-right: 5px;
-
-    
+    height: 90px;
 }
 
 .textoI{
@@ -76,13 +106,14 @@ body{
     background-color: transparent;
     color: rgb(255, 255, 255);
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    
 }
 
 
 
 .footer {
-
-    border: 1px solid rgb(255, 255, 255);;
+    margin-top: 20%;
+    
     clear: both;
     align-items: center;
     
@@ -107,10 +138,39 @@ li {
 
 .icone{
 
-    width: 25px;
+    width: 40px;
     border-radius: 100px;
+    margin-left: 10px;
+    transition: transform 1s;
+    transform: translateX(0) scale(0.5);
     
-    margin-left: 5px;
+}
+.icone:hover, .icone:focus{
+    transform: translateX(10px) scale(1.2);
+}
+
+.flip-container{
+    width: 80%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+   
+
+}
+.flip-container:hover .flipper{
+	transform: rotateY(180deg);
+}
+.flipper{
+    position: relative;
+	transition: transform 0.8s;
+	transform-style: preserve-3d;
     
-    
+}
+.front, .back{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+    backface-visibility: hidden;
+  
+}
+.back{
+	transform: rotateY(180deg);
 }
