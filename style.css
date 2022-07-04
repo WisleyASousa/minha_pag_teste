@@ -30,6 +30,7 @@ body{
     margin-right: auto;
     cursor: pointer;
 }
+
 .corpo{
     display: flex;
     flex-direction: row;
@@ -55,6 +56,9 @@ body{
 .menu2:hover{
     background-color: azure;
     color:black;
+    cursor: pointer;
+}
+.textoI:hover{
     cursor: pointer;
 }
 
@@ -159,7 +163,7 @@ li {
 }
 
 .flip-container{
-    width: 80%;
+    width: 90%;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
    
 
@@ -183,13 +187,6 @@ li {
 .back{
 	transform: rotateY(180deg);
 }
-
-
-
-
-
-
-
 
 svg{font-weight:bold;max-width:500px;height:auto;}
 
@@ -233,3 +230,46 @@ svg{font-weight:bold;max-width:500px;height:auto;}
     transform: rotateY(180deg);
 }*/
  
+
+
+
+/*.flip-conta {
+    width: 500px;
+    height: 400px;
+    perspective: 1000px;
+    
+  }
+.flipp{
+	width: 100%;
+	height: 100%;
+	transform-style: preserve-3d;
+    
+}
+
+#switch:checked ~ .flip-conta .flipp {
+    transform: rotateY(180deg);
+  }
+  
+.flipp{
+    position: relative;
+	width: 100%;
+	height: 100%;
+	transition: transform 0.8s;
+	transform-style: preserve-3d;
+}
+.f, .b{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+    backface-visibility: hidden;
+    width: 100%;
+	height: 100%;
+    
+  
+}
+.b{
+	transform: rotateY(180deg);
+}
+#switch{
+	display: none;
+}*/
