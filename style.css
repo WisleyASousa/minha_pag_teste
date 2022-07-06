@@ -18,6 +18,7 @@ body{
     animation: curso .5s infinite, escrita 3.5s steps(20 , end); 
     white-space: nowrap;
     overflow: hidden;
+    
 }
 @keyframes curso {
     0%{
@@ -169,6 +170,7 @@ a:link, a:visited,  a:hover, a:active{
     padding: 2rem;
     
     
+    
 }
 .flex-container{
     display:flex;
@@ -183,13 +185,18 @@ a:link, a:visited,  a:hover, a:active{
     border: none;
     -webkit-backdrop-filter: blur(10px);
     backdrop-filter: blur(10px);
-    margin-top: 0;
+    
+    
+    
+}
+/* 
+margin-top: 0;
     top:0;
     position: fixed;
     width: auto;
-}
+    */
 .fixo_menu{
- 
+    position: fixed;
    
 }
 
