@@ -18,13 +18,16 @@ body{
 }
 
 @media only screen and (max-width: 600px) {
-    .tes { width:90%; }
-    }
+    .flex-container { width:60%; }
+    .menu1 {display: none;}
+
+    
 @media only screen and (max-width: 1110px) {
-        .pri_foto2 { margin-top: 10%;}
+    .pri_foto2 { margin-top: 10%;}
     } 
 @media only screen and (max-width: 800px) {
-            .pri_foto2 { margin-top: 40%;}
+    .pri_foto2 { margin-top: 40%;}
+        
     } 
 header{
     position: fixed;
