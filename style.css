@@ -22,7 +22,10 @@ body{
     }
 @media only screen and (max-width: 1110px) {
         .pri_foto2 { margin-top: 10%;}
-        } 
+    } 
+@media only screen and (max-width: 800px) {
+            .pri_foto2 { margin-top: 40%;}
+    } 
 header{
     position: fixed;
     width: 100%;
