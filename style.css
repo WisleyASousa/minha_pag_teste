@@ -16,6 +16,13 @@ body{
     justify-content: center;
     
 }
+
+@media only screen and (max-width: 600px) {
+    .tes { width:90%; }
+    }
+@media only screen and (max-width: 1110px) {
+        .pri_foto2 { margin-top: 10%;}
+        } 
 header{
     position: fixed;
     width: 100%;
@@ -23,7 +30,7 @@ header{
 }
 
 .pri_foto2{
-
+    
 }
 
 .tituloF{
@@ -35,6 +42,7 @@ header{
 
 .menu1{
     margin-left: 7rem;
+    margin-right: 1rem;
 }
 
 .titulo{
@@ -76,6 +84,7 @@ h1{
     flex-direction: column;
     width: auto;
     
+    
 }
 html {
     scroll-behavior: smooth;
@@ -86,8 +95,8 @@ html {
 overflow-y: scroll;
 */
 .menu{
-   
-    margin-top: 10%;
+    
+    
     top:0;
     position: fixed;
     -webkit-backdrop-filter: blur(10px);
@@ -219,10 +228,7 @@ margin-top: 0;
     position: fixed;
     width: auto;
     */
-.fixo_menu{
-    position: fixed;
-   
-}
+
 
 
 .textoI{
@@ -238,6 +244,7 @@ margin-top: 0;
     color: rgb(255, 255, 255);
     box-shadow: 0 4px 8px 0 #fff;
     border: none;
+    
     
     
 }
