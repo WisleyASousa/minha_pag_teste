@@ -156,7 +156,8 @@ a:link, a:visited,  a:hover, a:active{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-
+    white-space: nowrap;
+    width: auto;
     font-size: 1.2em;
     padding: 2rem;
     
