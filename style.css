@@ -8,9 +8,33 @@ body{
     background: linear-gradient(-110deg, #051c4a 25%, rgba(0, 0, 0, 0) 40%), url('IMG_4050.JPG');
     background-size: cover;
     background-attachment: fixed;
+    background-color: #051c4a;
  
 }
 
+h1{
+    font-family:fantasy;
+    display: flex;
+    justify-content: center;
+}
+
+.principal_C{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    
+}
+
+
+.pri_foto{
+    align-items: center;
+    border-radius: 15px;
+    width: 100%;
+    margin-bottom: 4rem;
+    
+    box-shadow: 0 4px 8px 0 #fff;
+    border: none;
+}
 
 
 .perfil{
@@ -71,38 +95,60 @@ body{
     text-decoration: none;
 }
 
+.textoI:hover{
+    position:relative;
+    top:5px;
+    box-shadow:none;
+    font-weight:700;
+    display:inline-block;
+    text-decoration: none;
+    background-color: black
+}
+a:link, a:visited,  a:hover, a:active{
+    text-decoration: none; color: inherit;
+    
+    
+}
 .menu2{
-    padding-right: 1rem;
+    
+    
     border: 1px solid rgb(255, 255, 255);
     border-radius: 15px;
     padding: 1rem;
-    background-color: #051c4a;
+    
     border: none;
     box-shadow: 0 4px 8px 0 #fff;
 
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    
 }
 .menu_1{
     display: flex;
-    justify-content: space-between;
     flex-direction: row;
+    justify-content: space-around;
     font-size: 1.2em;
-    padding: 1rem;
+    padding: 2rem;
+    
 }
 .flex-container{
     display:flex;
     align-items: center;
     justify-content: center;
     border: 1px solid rgb(255, 255, 255);
-    background-color: transparent;
     border-radius: 15px;
     color: rgb(255, 255, 255);
     box-shadow: 0 4px 8px 0 #fff;
     margin-right: 5px;
     height: 90px;
     border: none;
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
 }
 
 .textoI{
+    
+    
     text-align: justify;
     border-radius: 15px;
     border: 1px solid rgb(255, 255, 255);;
@@ -110,11 +156,11 @@ body{
     margin-bottom: 10px;
     margin-right: 5px;
     height: auto;
-    background-color: transparent;
     color: rgb(255, 255, 255);
     box-shadow: 0 4px 8px 0 #fff;
     border: none;
-    
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
     
 }
 
@@ -189,6 +235,10 @@ li {
 }
 
 svg{font-weight:bold;max-width:500px;height:auto;}
+
+
+
+
 
 /*Testando estiulo novo 3D*/
 
@@ -272,4 +322,35 @@ svg{font-weight:bold;max-width:500px;height:auto;}
 }
 #switch{
 	display: none;
-}*/
+}
+
+
+.a {
+    display: inline-block;
+    width: 50px;
+    text-decoration: none;
+  }
+  .nav, scroll-container {
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+  }
+  .nav {
+    width: 339px;
+    padding: 5px;
+    border: 1px solid rgb(255, 255, 255);
+  }
+  scroll-container {
+    display: block;
+    width: 350px;
+    height: 200px;
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+  }
+  scroll-page {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    font-size: 5em;
+  }*/
