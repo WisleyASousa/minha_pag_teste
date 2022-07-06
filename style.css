@@ -150,6 +150,7 @@ a:link, a:visited,  a:hover, a:active{
     border: none;
     -webkit-backdrop-filter: blur(10px);
     backdrop-filter: blur(10px);
+    
 }
 
 .textoI{
