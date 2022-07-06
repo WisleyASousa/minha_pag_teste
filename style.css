@@ -11,20 +11,35 @@ body{
     background-color: #051c4a;
  
 }
+.tes{
+    display: flex;
+    justify-content: center;
+    
+}
 header{
     position: fixed;
+    width: 100%;
+    
+}
+
+.pri_foto2{
 
 }
 
 .tituloF{
-    margin-left: 2rem;
+   
     padding: 1rem;
+
+    
 }
 
+.menu1{
+    margin-left: 7rem;
+}
 
 .titulo{
     
-    font-size: 2.5rem;
+    font-size: 2rem;
     font-family: monospace;
     border-right: 3px solid #fff;
     animation: curso .5s infinite, escrita 3.5s steps(20 , end); 
@@ -57,9 +72,8 @@ h1{
 
 .principal_C{
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     flex-direction: column;
-    margin-top: 10%;
     width: auto;
     
 }
@@ -84,7 +98,7 @@ overflow-y: scroll;
     border-radius: 15px;
     width: 100%;
     margin-bottom: 4rem;
-    
+    margin-top: 10%;
     box-shadow: 0 4px 8px 0 #fff;
     border: none;
 }
@@ -163,11 +177,11 @@ a:link, a:visited,  a:hover, a:active{
     
 }
 .menu2{
-    scroll-behavior: smooth;
-    margin-left: 2rem;
+
+    
     border: 1px solid rgb(255, 255, 255);
     border-radius: 15px;
-    padding: 1rem;
+    padding: 5px;
     border: none;
     box-shadow: 0 4px 8px 0 #fff;
 
@@ -183,13 +197,14 @@ a:link, a:visited,  a:hover, a:active{
 }
 .flex-container{
     display:flex;
+    align-items: flex-end;
     align-items: center;
     flex-direction: row;
     border: 1px solid rgb(255, 255, 255);
     border-radius: 15px;
     color: rgb(255, 255, 255);
     box-shadow: 0 4px 8px 0 #fff;
-    margin-right: 5px;
+    
     
     border: none;
     -webkit-backdrop-filter: blur(10px);
@@ -297,13 +312,13 @@ li {
 	transform: rotateY(180deg);
 }
 
-svg{font-weight:bold;max-width:500px;height:auto;}
 
 
 
 
 
-/*Testando estiulo novo 3D*/
+
+/*Testando estilo novo 3D*/
 
 /*.framworks{
     position: relative;
