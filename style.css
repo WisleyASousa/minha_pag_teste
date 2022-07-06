@@ -46,6 +46,7 @@ h1{
     display: flex;
     justify-content: center;
     flex-direction: column;
+    margin-top: 10%;
     
 }
 html {
@@ -53,7 +54,11 @@ html {
   }
 .menu{
     overflow-y: scroll;
-    
+    margin-top: 10%;
+    top:0;
+    position: fixed;
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
 }
 .pri_foto{
     align-items: center;
@@ -125,7 +130,7 @@ html {
 }
 
 .textoI:hover{
-    position:relative;
+    
     top:5px;
     box-shadow:none;
     font-weight:700;
@@ -151,8 +156,10 @@ a:link, a:visited,  a:hover, a:active{
     -webkit-backdrop-filter: blur(10px);
     backdrop-filter: blur(10px);
     
+    
 }
 .menu_1{
+    position: sticky;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -160,6 +167,7 @@ a:link, a:visited,  a:hover, a:active{
     width: auto;
     font-size: 1.2em;
     padding: 2rem;
+    
     
 }
 .flex-container{
@@ -175,8 +183,16 @@ a:link, a:visited,  a:hover, a:active{
     border: none;
     -webkit-backdrop-filter: blur(10px);
     backdrop-filter: blur(10px);
-    
+    margin-top: 0;
+    top:0;
+    position: fixed;
+    width: auto;
 }
+.fixo_menu{
+ 
+   
+}
+
 
 .textoI{
     
@@ -191,8 +207,7 @@ a:link, a:visited,  a:hover, a:active{
     color: rgb(255, 255, 255);
     box-shadow: 0 4px 8px 0 #fff;
     border: none;
-    -webkit-backdrop-filter: blur(10px);
-    backdrop-filter: blur(10px);
+    
     
 }
 
