@@ -20,7 +20,7 @@ body{
 @media only screen and (max-width: 600px) {
     .flex-container { width:60%; }
     .menu1 {display: none;}
-
+}
     
 @media only screen and (max-width: 1110px) {
     .pri_foto2 { margin-top: 10%;}
