@@ -14,21 +14,31 @@ body{
 .tes{
     display: flex;
     justify-content: center;
-    
+    width: auto;
+    margin-left: -50px;
+}
+.menu-mob{
+    display: none;
+}
+@media only screen and (max-width: 1200px) {
+    .pri_foto2 {margin-top: 10%;}
 }
 
-@media only screen and (max-width: 600px) {
-    .flex-container { width:60%; }
+@media only screen and (max-width: 900px) {
     .menu1 {display: none;}
+    .pri_foto2 {margin-top: 10%;}
 }
-    
-@media only screen and (max-width: 1110px) {
-    .pri_foto2 { margin-top: 10%;}
-    } 
-@media only screen and (max-width: 800px) {
-    .pri_foto2 { margin-top: 40%;}
-        
-    } 
+
+@media only screen and (max-width: 500px) {
+
+} 
+@media (max-width: 650px) {
+    .pri_foto2 {margin-top: 20%;}
+} 
+@media only screen and (max-width: 700px) {
+}
+
+
 header{
     position: fixed;
     width: 100%;
@@ -36,7 +46,6 @@ header{
 }
 
 .pri_foto2{
-    
 }
 
 .tituloF{
@@ -47,6 +56,7 @@ header{
 }
 
 .menu1{
+   
     margin-left: 7rem;
     margin-right: 1rem;
 }
@@ -193,7 +203,7 @@ a:link, a:visited,  a:hover, a:active{
 }
 .menu2{
 
-    
+    display: inline-block;
     border: 1px solid rgb(255, 255, 255);
     border-radius: 15px;
     padding: 5px;
