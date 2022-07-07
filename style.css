@@ -264,7 +264,7 @@ margin-top: 0;
 
 .textoI{
     
-    
+    align-items: center;
     text-align: justify;
     border-radius: 15px;
     border: 1px solid rgb(255, 255, 255);;
