@@ -100,7 +100,7 @@ header{
     font-size: 2rem;
     font-family: monospace;
     border-right: 3px solid #fff;
-    animation: curso .5s infinite, escrita 3.5s steps(20 , end); 
+    animation: curso .5s infinite, escrita 5s steps(20 , end) infinite; 
     white-space: nowrap;
     overflow: hidden;
     
@@ -114,11 +114,15 @@ header{
     }
 }
 @keyframes escrita {
-    from{
+    0%{
         width: 0;
     }
-    to{
+    50%{
         width: 100%;
+    }
+    100%{
+        width: 0%;
+        
     }
 }
 
