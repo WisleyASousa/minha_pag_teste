@@ -11,6 +11,8 @@ body{
     background-color: #051c4a;
  
 }
+
+
 .alerta{
     animation: alerta 1s infinite;
 }
@@ -141,8 +143,19 @@ overflow-y: scroll;
     margin-top: 10%;
     box-shadow: 0 4px 8px 0 #fff;
     border: none;
+    transform-style: preserve-3d;
+    
+}
+.pri_foto:hover{
+    transform: rotateY(180deg);
+    animation: giro 3s;
 }
 
+
+
+@keyframes giro {
+    0%{transform:rotateY(360deg)}
+}
 
 .perfil{
     width: 8%;
@@ -264,7 +277,6 @@ margin-top: 0;
 
 .textoI{
     
-    align-items: center;
     text-align: justify;
     border-radius: 15px;
     border: 1px solid rgb(255, 255, 255);;
