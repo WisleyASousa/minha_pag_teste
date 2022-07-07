@@ -11,15 +11,30 @@ body{
     background-color: #051c4a;
  
 }
+.alerta{
+    animation: alerta 1s infinite;
+}
+@keyframes alerta {
+    0%{
+        color: #fff;
+    }
+    50%{
+        color: black;
+    }
+}
+
+
+
+
+
+
 .tes{
     display: flex;
     justify-content: center;
     width: auto;
     margin-left: -50px;
 }
-.menu-mob{
-    display: none;
-}
+
 @media only screen and (max-width: 1200px) {
     .pri_foto2 {margin-top: 10%;}
 }
