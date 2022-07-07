@@ -105,6 +105,24 @@ header{
     overflow: hidden;
     
 }
+.qrcod{
+    width: 40%;
+    position: fixed;
+    padding-top: 5%;
+    padding-left: 25%;
+}
+.perf{
+    display: inline-block;
+    font-size: 20px;
+    font-family: monospace;
+    white-space: nowrap;
+}
+ul {
+    list-style: none;
+}
+ul li::before {
+    content: "→";
+}
 @keyframes curso {
     0%{
         border-color: transparent;
@@ -202,8 +220,6 @@ html {
 
 .textoI:hover{
     cursor: pointer;
-
-    display:inline-block;
     text-decoration: none;
     background-color: black
 }
@@ -295,10 +311,10 @@ h4{
     
 }
 
-li {
+/*li {
     list-style-type: none;
 
-}
+}*/
 
 .icone{
 
