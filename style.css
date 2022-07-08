@@ -105,12 +105,30 @@ header{
     overflow: hidden;
     
 }
+.video{
+    border: 2px ridge transparent;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
 .qrcod{
     width: 40%;
     position: fixed;
     padding-top: 5%;
     padding-left: 25%;
+    border: 2px ridge transparent;
+    background-size: contain;
+    margin-right: 55px;
 }
+/*
+border: 2px ridge transparent;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+*/
 .fato{
     font-size: 20px;
     font-family: monospace;
@@ -123,9 +141,6 @@ header{
     
     font-size: 20px;
     font-family: monospace;
-  
-    display: flex;
-
     display: inline-block;
     margin-right: 55px;
     
