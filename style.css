@@ -352,10 +352,6 @@ h4{
     
 }
 
-/*li {
-    list-style-type: none;
-
-}*/
 
 .icone{
 
@@ -371,8 +367,9 @@ h4{
     transform: translateX(10px) scale(1.2);
 }
 .perfilTexto{
-    padding-top: 35%;
+    padding-top: 40%;
 }
+
 /* Slides*/
 
 @media only screen and (max-width: 1350px) {
@@ -387,13 +384,17 @@ h4{
 @media only screen and (max-width: 950px) {
     .perfilTexto {padding-top: 55%;}
 }
+@media only screen and (max-width: 600px) {
+    .perfilTexto{margin-top: 70%;}
+}
+
 .content{
     height: 350px;
     width: 800px;
     border-radius: 20px;
     overflow: hidden;
     position: absolute;
-    top: 40%;
+    top: 35%;
     left: 50%;
     transform: translate(-50%, -50%);
     
