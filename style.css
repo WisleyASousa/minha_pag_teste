@@ -1,4 +1,5 @@
 
+/*--- Modificando Barra de Rolagem ---*/
 *::-webkit-scrollbar {
     width: 12px;
   }
@@ -13,7 +14,7 @@
     border: 3px solid #fff;
   }
 
-
+/*--- Modificando Plano de Fundo --*/
 body{
     
     font-family: -apple-system, BlinkMacSystemFont, 'Open Sans', sans-serif;
@@ -28,6 +29,11 @@ body{
  
 }
 
+/*-- Titulos, Header, Menu de Titulos -- */
+html {
+    scroll-behavior: smooth;
+    
+  }
 
 .alerta{
     animation: alerta 1s infinite;
@@ -41,11 +47,6 @@ body{
         color: black;
     }
 }
-
-
-
-
-
 
 .tes{
     display: flex;
@@ -72,39 +73,91 @@ body{
 @media only screen and (max-width: 700px) {
 }
 
-
 header{
     position: fixed;
     width: 100%;
     
 }
 
-.pri_foto2{
-}
-
 .tituloF{
-   
     padding: 1rem;
-
-    
 }
 
 .menu1{
-   
     margin-left: 7rem;
     margin-right: 1rem;
 }
 
-.titulo{
-    
+.titulo{   
     font-size: 2rem;
     font-family: monospace;
     border-right: 3px solid #fff;
     animation: curso .5s infinite, escrita 5s steps(20 , end) infinite; 
     white-space: nowrap;
-    overflow: hidden;
+    overflow: hidden;   
+}
+
+@keyframes curso {
+    0%{
+        border-color: transparent;
+    }
+    50%{
+        border-color: #fff;
+    }
+}
+@keyframes escrita {
+    0%{
+        width: 0;
+    }
+    50%{
+        width: 100%;
+    }
+    100%{
+        width: 0%;
+        
+    }
+}
+
+/*--- Editando titulo flutuante --*/
+
+
+
+.menu2{
+
+    display: inline-block;
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 15px;
+    padding: 5px;
+    border: none;
+    box-shadow: 0 4px 8px 0 #fff;
+    transition: 0.6s;
+
+}
+.menu_1{
+    position: sticky;
+    white-space: nowrap;
+    width: auto;
+    font-size: 1.2em;
+    padding: 2rem;
+    
     
 }
+
+.menu2:hover{
+    background-color: azure;
+    color:black;
+    cursor: pointer;
+}
+
+.menu2:active{
+    position:relative;
+    box-shadow:none;
+    text-decoration: none;
+}
+
+
+
+/*--- Video de Midia ---*/
 .video{
     border: 2px ridge transparent;
     width: 100%;
@@ -113,30 +166,18 @@ header{
     align-items: center;
     
 }
+
+/*--- COdigo do Whats --*/
 .qrcod{
     width: 40%;
     position: fixed;
     padding-top: 5%;
     padding-left: 25%;
-    border: 2px ridge transparent;
-    background-size: contain;
+    
     margin-right: 55px;
 }
-/*
-border: 2px ridge transparent;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-*/
-.fato{
-    font-size: 20px;
-    font-family: monospace;
-    
-    
-    width: 40%;
 
-}
+/*---  Editando Area de texto do Corpo --*/
 .perf{
     
     font-size: 20px;
@@ -162,27 +203,6 @@ ul {
     list-style: none;
 }
 
-@keyframes curso {
-    0%{
-        border-color: transparent;
-    }
-    50%{
-        border-color: #fff;
-    }
-}
-@keyframes escrita {
-    0%{
-        width: 0;
-    }
-    50%{
-        width: 100%;
-    }
-    100%{
-        width: 0%;
-        
-    }
-}
-
 h1{
     font-family:fantasy;
     display: flex;
@@ -195,67 +215,11 @@ h1{
     flex-direction: column;
     width: auto;
     
-    
-}
-html {
-    scroll-behavior: smooth;
-    
-  }
-
-.menu{
-    
-    
-    top:0;
-    position: fixed;
-    -webkit-backdrop-filter: blur(10px);
-    backdrop-filter: blur(10px);
-}
-.pri_foto{
-    align-items: center;
-    border-radius: 15px;
-    width: 100%;
-    margin-bottom: 4rem;
-    margin-top: 10%;
-    box-shadow: 0 4px 8px 0 #fff;
-    border: none;
-    
-}
-.pri_foto:hover{
-    transform: rotateY(180deg);
-    animation: giro 3s;
 }
 
 
 
-@keyframes giro {
-    0%{transform:rotateY(360deg)}
-}
 
-.eu{
-    width: 60%;
-    border-radius: 15px;
-    box-shadow: 0 4px 8px 0 #fff;
-    padding-bottom: 5px;
-    padding-right: 5px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    cursor: pointer;
-}
-
-
-
-.menu2:hover{
-    background-color: azure;
-    color:black;
-    cursor: pointer;
-}
-
-.menu2:active{
-    position:relative;
-    box-shadow:none;
-    text-decoration: none;
-}
 
 .textoI:hover{
     cursor: pointer;
@@ -267,42 +231,10 @@ a:link, a:visited,  a:hover, a:active{
     
     
 }
-.menu2{
+.perfilTexto{
+    padding-top: 40%;
+}
 
-    display: inline-block;
-    border: 1px solid rgb(255, 255, 255);
-    border-radius: 15px;
-    padding: 5px;
-    border: none;
-    box-shadow: 0 4px 8px 0 #fff;
-    transition: 0.6s;
-
-}
-.menu_1{
-    position: sticky;
-    white-space: nowrap;
-    width: auto;
-    font-size: 1.2em;
-    padding: 2rem;
-    
-    
-}
-.flex-container{
-    display:flex;
-    align-items: flex-end;
-    align-items: center;
-    flex-direction: row;
-    border: 1px solid rgb(255, 255, 255);
-    border-radius: 15px;
-    color: rgb(255, 255, 255);
-    box-shadow: 0 4px 8px 0 #fff;
-    border: none;
-    -webkit-backdrop-filter: blur(10px);
-    backdrop-filter: blur(10px);
-    
-    
-    
-}
 
 .textoI{
     margin-top: 3rem;
@@ -326,6 +258,26 @@ h4{
 	text-shadow: #000 2px 3px 2px;
 }
 
+/*--- Barra Flutuante --*/
+.flex-container{
+    display:flex;
+    align-items: flex-end;
+    align-items: center;
+    flex-direction: row;
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 15px;
+    color: rgb(255, 255, 255);
+    box-shadow: 0 4px 8px 0 #fff;
+    border: none;
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    
+    
+    
+}
+
+
+/*---  Editando Fouter ---*/
 .footer {
     margin-top: 20%;
     
@@ -366,11 +318,9 @@ h4{
 .icone:hover, .icone:focus{
     transform: translateX(10px) scale(1.2);
 }
-.perfilTexto{
-    padding-top: 40%;
-}
 
-/* Slides*/
+
+/*--- Slides ---*/
 
 @media only screen and (max-width: 1350px) {
     .perfilTexto {padding-top: 40%;}
@@ -389,12 +339,12 @@ h4{
 }
 
 .content{
-    height: 350px;
+    height: 400px;
     width: 800px;
     border-radius: 20px;
     overflow: hidden;
     position: absolute;
-    top: 35%;
+    top: 45%;
     left: 50%;
     transform: translate(-50%, -50%);
     
